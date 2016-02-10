@@ -4,9 +4,11 @@ A barebones channel implementation based-upon promises.
 The motivation for the library is to provide a lightweight channel implementation that can be used as a communication channel between 'push-based' event emitters, and 'pull-based' generators. This is a common need when working with async functions, or with sagas in `redux-saga`. This is also the reason why the implementation is based upon promises, as both async functions and sagas can pause execution of the function/generator until an awaited/yielded promise has resolved. This provides an easy way to defer execution until we have been able to take a value from the channel.
 
 ### Usage
-> NOTE: not yet published on npm
+> NOTE: not yet published on npm, so install directly from github repo
+
 `npm install nirrek/barebones-channel`
-The library isn't yet distributed as ES5 so you will need an appropriate file loader (such using babel-loader with Webpack) to perform the transpilation. It also requires that ES2015 promises are available in the runtime environment.
+
+The library isn't yet distributed as ES5 so you will need an appropriate file loader (such as using babel-loader with Webpack) to perform the transpilation. It also requires that ES2015 promises are available in the runtime environment.
 
 ###  Putting values on the channel
 ```javascript
