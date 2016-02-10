@@ -1,7 +1,7 @@
 {
-  "name": "channels",
+  "name": "barebones-channel",
   "version": "1.0.0",
-  "description": "",
+  "description": "A barebones channel implementation based-upon promises.",
   "main": "index.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
